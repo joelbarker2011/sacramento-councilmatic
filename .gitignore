@@ -9,4 +9,5 @@ static/**
 **/static/images/ocd-person/*.jpg
 
 __pycache__
+*.pyc
 downloads

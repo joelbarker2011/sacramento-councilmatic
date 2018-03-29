@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'haystack',
     'sacramento',
     'councilmatic_core',
+    'adv_cache_tag',
 )
 
 try:

@@ -193,6 +193,7 @@ Then, run migrations. (Be sure that you are "working on" the correct virtual env
 
 ```bash
 python manage.py migrate --no-initial-data
+# or python manage.py migrate
 ```
 
 Create an admin user. Set a username and password when prompted.
@@ -213,6 +214,7 @@ Running `import_data` will take a while, depending on volume (e.g., NYC may requ
 
 ```bash
 python manage.py import_data
+# or python manage.py loaddata
 ```
 
 By default, the import_data command carefully looks at the OCD API; it is a smart management command. If you already have bills loaded, it will not look at everything on the API - it will look at the most recently updated bill in your database, see when that bill was last updated on the OCD API, and then look through everything on the API that was updated after that point. If you'd like to load things that are older than what you currently have loaded, you can run the import_data management command with a `--delete` option, which removes everything from your database before loading.
